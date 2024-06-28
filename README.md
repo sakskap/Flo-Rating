@@ -9,7 +9,6 @@ This project aims to predict the Elo ratings of chess players based on the lengt
 - [Preprocessing](#preprocessing)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Model Training and Evaluation](#model-training-and-evaluation)
-
 - [Advanced Model Exploration](#advanced-model-exploration)
 - [Results](#results)
 - [Conclusion](#conclusion)
@@ -64,4 +63,19 @@ The results of the model evaluations are presented, highlighting the performance
 
 #### Random Forest Regressor
 - **WhiteElo**:
-  - Mean
+  - Mean Squared Error (MSE): 73,520.49
+  - R-squared (R²): -0.0080
+- **BlackElo**:
+  - Mean Squared Error (MSE): 72,811.55
+  - R-squared (R²): -0.0027
+
+## Conclusion
+
+In this project, we aimed to predict the Elo ratings of chess players using various machine learning models. The results indicated that both models struggled to fit the data well, suggesting that the `MoveLength` feature alone may not be sufficient for accurate predictions. Future work should focus on feature engineering, model tuning, and exploring advanced models to improve predictive performance.
+
+## Future Work
+
+- **Feature Engineering**: Create additional features from the game data to provide more predictive power.
+- **Model Tuning**: Conduct hyperparameter tuning for the models to optimize their performance.
+- **Advanced Models**: Explore advanced models such as XGBoost, LightGBM, and neural networks.
+- **Data Enrichment**: Include more data or enrich the existing dataset with additional relevant information.
